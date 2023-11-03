@@ -4,6 +4,10 @@ My personal website uses a Tailwind UI template, which was built using Tailwind 
 
 WIP:
 - missing mainly all blogpost etc
+- change company logos
+
+
+![Main page](./screenshot/main.jpg)
 
 
 ## Getting started

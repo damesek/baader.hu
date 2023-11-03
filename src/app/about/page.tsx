@@ -50,7 +50,7 @@ function MailIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 export const metadata: Metadata = {
   title: 'About',
   description:
-    'I’m Baader Szabolcs. I live in Budapest, where I design the digital future.',
+    'I&apos;m Baader Szabolcs. I live in Budapest, where I design the digital future.',
 }
 
 export default function About() {
@@ -69,21 +69,21 @@ export default function About() {
         </div>
         <div className="lg:order-first lg:row-span-2">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            I’m Baader Szabolcs. I'm live in Budapest, where I design the
-            new future's first seeds.
+            I&apos;m Baader Szabolcs, live in Budapest, where I design the
+            new future&apos;s first seeds.
           </h1>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
-            I've been working in the world of computers, websites, and helping businesses grow for nearly twenty years. It's been a long and exciting journey, starting from a beginner to becoming a leader in my field. 
+            I&apos;ve been working in the world of computers, websites, and helping businesses grow for nearly twenty years. It&apos;s been a long and exciting journey, starting from a beginner to becoming a leader in my field. 
             </p>
             <p>
             My expertise spans across data analytics and Conversion Rate Optimization (CRO), with a distinct ability to bridge communication between developers and the business realm. My development technology stack is rooted in Clojure and Python, showcasing my technical acumen in the field.
             </p>
             <p>
-            I am also very interested in something called Artificial Intelligence (AI), which is like teaching computers to think and learn like humans. It's amazing to see how AI can help online shops sell more products and understand what customers like and other parts of this field.
+            I am also very interested in something called Artificial Intelligence (AI), which is like teaching computers to think and learn like humans. It&apos;s amazing to see how AI can help online shops sell more products and understand what customers like and other parts of this field.
             </p>
             <p>
-            I love thinking of new ways to solve problems, making rough sketches of ideas (that's called prototyping), and seeing those ideas come to life. It's all about helping these small and big companies find their way to success, and it feels great to see them thrive!
+            I love thinking of new ways to solve problems, making rough sketches of ideas (that&apos;s called prototyping), and seeing those ideas come to life. It&apos;s all about helping these small and big companies find their way to success, and it feels great to see them thrive!
             </p>
           </div>
         </div>
