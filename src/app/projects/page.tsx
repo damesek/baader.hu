@@ -69,7 +69,7 @@ export default function Projects() {
       </ul>
 
       <div className="mt-10 max-w-xs px-2.5 lg:max-w-none p-20 w-4/5 h-20">
-          <p className="mb-3 text-md font-light text-gray-600  dark:text-zinc-200">I feel privileged that so many have trusted me and I've been able to work on amazing projects. Just a few:</p>
+          <p className="mb-3 text-md font-light text-gray-600  dark:text-zinc-200">I feel privileged that so many have trusted me and I&apos;ve been able to work on amazing projects. Just a few:</p>
             <Image
               src={referencesImage}
               alt=""
