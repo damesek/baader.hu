@@ -247,7 +247,7 @@ function Photos() {
           <div
             key={image.src}
             className={clsx(
-              'relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl',
+              'relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl hover:-translate-y-1 hover:shadow-lg shadow-md hover:transition easy-in-out hover:duration-300',
               rotations[imageIndex % rotations.length],
             )}
           >
@@ -272,7 +272,7 @@ export default async function Home() {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            Digital Strategist, AI researcher and Clojure developer.
+            Digital Strategist, research CI and Clojure developer.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
             I’m Szabolcs, a software developer and digital expert based in Budapest, Hungary. 

@@ -1,5 +1,15 @@
 import Link from 'next/link'
 import clsx from 'clsx'
+import Image, { StaticImageData } from 'next/image'
+
+interface CardImageProps {
+  src: StaticImageData; 
+  alt: string; 
+  className?: string; 
+  width: number | `${number}`;
+  height: number | `${number}`;
+}
+
 
 function ChevronRightIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -39,7 +49,7 @@ Card.Link = function CardLink({
 }: React.ComponentPropsWithoutRef<typeof Link>) {
   return (
     <>
-      <div className="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl" />
+      <div className="absolute -inset-x-4 -inset-y-6 z-1 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl" />
       <Link {...props}>
         <span className="absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2xl" />
         <span className="relative z-10">{children}</span>
@@ -47,6 +57,33 @@ Card.Link = function CardLink({
     </>
   )
 }
+
+
+Card.Image = function CardImage({
+  src,
+  alt,
+  width,
+  height,
+  className,
+  ...props
+}: CardImageProps) {
+  return (
+    <div className={clsx("z-0 lg:pl-20", className)}>
+      <div className="hover:opacity-100 opactity-100 max-w-xs px-2.5 lg:max-w-none">
+        <Image
+          src={src}
+          alt={alt}
+          width={width}
+          height={height}
+          className="rounded-2x  object-cover dark:bg-transparent mt-7"
+          {...props} // Spread any other image-specific props
+        />
+      </div>
+    </div>
+  )
+}
+
+
 
 Card.Title = function CardTitle<T extends React.ElementType = 'h2'>({
   as,

@@ -45,8 +45,8 @@ export default async function ArticlesIndex() {
 
   return (
     <SimpleLayout
-      title="Transofrming teams, growth strategies, and the Clojure development."
-      intro="All of my long-form thoughts on programming, leadership, product design, and more, collected in chronological order. (I am working on uploading all my old content here.)"
+      title="Growth strategies, AI and the Clojure development"
+      intro="All of my long-form thoughts on artifical intelligence, programming, digital strategy, product design, and more, collected in chronological order. (I am working on uploading all my old content here.)"
     >
       
       <div className="md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40">
