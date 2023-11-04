@@ -49,7 +49,7 @@ Card.Link = function CardLink({
 }: React.ComponentPropsWithoutRef<typeof Link>) {
   return (
     <>
-      <div className="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl" />
+      <div className="absolute -inset-x-4 -inset-y-6 z-1 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl" />
       <Link {...props}>
         <span className="absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2xl" />
         <span className="relative z-10">{children}</span>
@@ -68,14 +68,14 @@ Card.Image = function CardImage({
   ...props
 }: CardImageProps) {
   return (
-    <div className={clsx("lg:pl-20", className)}>
-      <div className="max-w-xs px-2.5 lg:max-w-none">
+    <div className={clsx("z-0 lg:pl-20", className)}>
+      <div className="hover:opacity-100 opactity-100 max-w-xs px-2.5 lg:max-w-none">
         <Image
           src={src}
           alt={alt}
           width={width}
           height={height}
-          className="rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800 mt-7"
+          className="rounded-2x  object-cover dark:bg-zinc-800 mt-7"
           {...props} // Spread any other image-specific props
         />
       </div>

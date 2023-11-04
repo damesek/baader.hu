@@ -4,7 +4,7 @@ import Image, { StaticImageData } from 'next/image'
 import { Card } from '@/components/Card'
 import { Section } from '@/components/Section'
 import { SimpleLayout } from '@/components/SimpleLayout'
-import croImage from '@/images/photos/cro-book.jpg'
+import croImage from '@/images/photos/cro-book.png'
 
 
 function SpeakingSection({
@@ -72,7 +72,7 @@ function Books({
         alt={imageAlt}
         width={imageWidth}
         height={imageHeight}
-        className="w-3/4 h-auto"
+        className="hover:opacity-100 opactity-100  w-3/4 h-auto"
       />
     </Card>
   )
@@ -117,7 +117,7 @@ export default function Speaking() {
         </SpeakingSection>
         </div>
 
-        <div className="space-y-20 pt-10 mt-10">
+        <div className="space-y-20 pt-10 mt-10 bg-white">
         <SpeakingSection title="Books"> 
           <Books
             title="Conversion Optimization Book"
