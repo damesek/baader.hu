@@ -9,7 +9,7 @@ import logoHelioStream from '@/images/logos/helio-stream.svg'
 import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
 import logoPlanetaria from '@/images/logos/planetaria.svg'
 import { ChevronRightIcon } from '@heroicons/react/20/solid'
-import referencesImage from '@/images/logos/references.png'
+import referencesImage from '@/images/logos/references.jpg'
 
 const projects = [
   {
@@ -73,7 +73,7 @@ export default function Projects() {
             <Image
               src={referencesImage}
               alt=""
-              className="rounded-sm bg-zinc-100 dark:bg-zinc-800"
+              className="mt-5 rounded-md bg-zinc-100 dark:bg-zinc-800 hover:-translate-y-0.5 hover:transition ease-in-out hover:duration-300"
             />
           </div>
     </SimpleLayout>

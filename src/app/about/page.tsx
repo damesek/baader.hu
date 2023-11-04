@@ -80,7 +80,7 @@ export default function About() {
             My expertise spans across data analytics and Conversion Rate Optimization (CRO), with a distinct ability to bridge communication between developers and the business realm. My development technology stack is rooted in Clojure and Python, showcasing my technical acumen in the field.
             </p>
             <p>
-            I am also very interested in something called Artificial Intelligence (AI), which is like teaching computers to think and learn like humans. It&apos;s amazing to see how AI can help online shops sell more products and understand what customers like and other parts of this field.
+            Since 2016, there has been a significant evolution in a field known as Artificial Intelligence (AI), particularly in developing what may be termed real intelligence. For example AI evolve to collaborate more effectively with humans, autonomy, sophisticated decision making. It is fascinating to consider the progress in AI that contributes to various sectors.
             </p>
             <p>
             I love thinking of new ways to solve problems, making rough sketches of ideas (that&apos;s called prototyping), and seeing those ideas come to life. It&apos;s all about helping these small and big companies find their way to success, and it feels great to see them thrive!
