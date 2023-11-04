@@ -1,5 +1,15 @@
 import Link from 'next/link'
 import clsx from 'clsx'
+import Image, { StaticImageData } from 'next/image'
+
+interface CardImageProps {
+  src: StaticImageData; 
+  alt: string; 
+  className?: string; 
+  width: number | `${number}`;
+  height: number | `${number}`;
+}
+
 
 function ChevronRightIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -47,6 +57,33 @@ Card.Link = function CardLink({
     </>
   )
 }
+
+
+Card.Image = function CardImage({
+  src,
+  alt,
+  width,
+  height,
+  className,
+  ...props
+}: CardImageProps) {
+  return (
+    <div className={clsx("lg:pl-20", className)}>
+      <div className="max-w-xs px-2.5 lg:max-w-none">
+        <Image
+          src={src}
+          alt={alt}
+          width={width}
+          height={height}
+          className="rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800 mt-7"
+          {...props} // Spread any other image-specific props
+        />
+      </div>
+    </div>
+  )
+}
+
+
 
 Card.Title = function CardTitle<T extends React.ElementType = 'h2'>({
   as,
