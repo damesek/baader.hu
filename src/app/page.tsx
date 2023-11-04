@@ -10,10 +10,10 @@ import {
   LinkedInIcon,
   TwitterIcon,
 } from '@/components/SocialIcons'
-import logoAirbnb from '@/images/logos/airbnb.svg'
-import logoFacebook from '@/images/logos/facebook.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
-import logoStarbucks from '@/images/logos/starbucks.svg'
+import logoBrightly from '@/images/logos/brightly.jpg'
+import logoOpenVSE from '@/images/logos/openvse.png'
+import logoCE from '@/images/logos/conversionexperts.jpg'
+import logoHPS from '@/images/logos/hps.jpg'
 import image1 from '@/images/photos/image-9.jpg'
 import image2 from '@/images/photos/image-7.jpg'
 import image3 from '@/images/photos/image-12.jpg'
@@ -157,7 +157,7 @@ function Role({ role }: { role: Role }) {
 
   return (
     <li className="flex gap-4">
-      <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
+      <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-md shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
         <Image src={role.logo} alt="" className="h-7 w-7" unoptimized />
       </div>
       <dl className="flex flex-auto flex-wrap gap-x-2">
@@ -187,8 +187,8 @@ function Resume() {
   let resume: Array<Role> = [
     {
       company: 'IOIOIO',
-      title: 'co-founder',
-      logo: logoPlanetaria,
+      title: '7 years in the startup world',
+      logo: logoOpenVSE,
       start: '2016',
       end: {
         label: '2023',
@@ -198,21 +198,21 @@ function Resume() {
     {
       company: 'Brightly',
       title: 'Head of Digital',
-      logo: logoAirbnb,
+      logo: logoBrightly,
       start: '2015',
       end: '2016',
     },
     {
       company: 'Conversion Experts',
       title: 'CEO',
-      logo: logoFacebook,
+      logo: logoCE,
       start: '2009',
       end: '2015',
     },
     {
       company: 'Head of Interactive',
       title: 'HPS, Interactive Division',
-      logo: logoStarbucks,
+      logo: logoHPS,
       start: '2008',
       end: '2009',
     },
@@ -272,10 +272,10 @@ export default async function Home() {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            Clojure developer, founder, and digital strategist.
+            Digital Strategist, AI researcher and Clojure developer.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I’m Szabolcs, a software developer and entrepreneur based in Budapest, Hungary. 
+            I’m Szabolcs, a software developer and digital expert based in Budapest, Hungary. 
             I have nearly twenty years of experience in digital agency, startup, IT projects and client work and extensive experience in data related projects and CRO. Father of two children.
           </p>
           <div className="mt-6 flex gap-6">
