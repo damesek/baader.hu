@@ -72,7 +72,7 @@ function Books({
         alt={imageAlt}
         width={imageWidth}
         height={imageHeight}
-        className="hover:opacity-100 opactity-100  w-3/4 h-auto"
+        className="hover:opacity-100 opactity-100  w-3/4 h-auto dark:bg-transparent"
       />
     </Card>
   )
@@ -117,7 +117,7 @@ export default function Speaking() {
         </SpeakingSection>
         </div>
 
-        <div className="space-y-20 pt-10 mt-10 bg-white">
+        <div className="space-y-20 pt-10 mt-10 bg-white dark:bg-transparent">
         <SpeakingSection title="Books"> 
           <Books
             title="Conversion Optimization Book"

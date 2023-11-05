@@ -75,7 +75,7 @@ Card.Image = function CardImage({
           alt={alt}
           width={width}
           height={height}
-          className="rounded-2x  object-cover dark:bg-zinc-800 mt-7"
+          className="rounded-2x  object-cover dark:bg-transparent mt-7"
           {...props} // Spread any other image-specific props
         />
       </div>
