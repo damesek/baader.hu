@@ -17,6 +17,15 @@ const projects = [
     description:
       'Clojurized access and OpenAPI to Magyarlanc toolkit for linguistic processing of Hungarian.',
     link: { href: 'https://github.com/damesek/eszterlanc', label: 'eszterlanc' },
+    version: 'shipped v0.3.2'
+    
+  },
+  {
+    name: 'Contribution to the openai-clojure',
+    description:
+      'Clojure functions to drive the OpenAI API and Azure OpenAI API.',
+    link: { href: 'https://github.com/wkok/openai-clojure', label: 'openai-clojure' },
+    version: 'to v0.12.2'
     
   }
   
@@ -60,7 +69,7 @@ export default function Projects() {
               <LinkIcon className="h-6 w-6 flex-none" />
               <span className="ml-2">{project.link.label}</span>
               <span className="inline-flex items-center space-x-2 text-sm font-medium leading-6 text-gray-600 group-hover:text-teal-500  dark:text-zinc-200">
-                      <span className="pl-12">shipped v0.3.2</span>
+                      <span className="pl-12">{project.version}</span>
                       <ChevronRightIcon className="h-5 w-5 text-gray-400" aria-hidden="true" />
                     </span>
             </p>
