@@ -89,10 +89,17 @@ export default function Speaking() {
   return (
     <SimpleLayout
       title="I’ve spoken at events"
-      intro="One of my favorite ways to share my ideas is live on stage, where there’s so much more communication bandwidth than there is in writing."
+      intro="One of my favorite ways to share my ideas is live on stage, where there’s so much more communication bandwidth than there is in writing. I had a nearly seven years pause due to my contracts."
     >
       <div className="space-y-20">
         <SpeakingSection title="Conferences">
+        <Appearance
+            href="https://www.meetup.com/itrend/events/297318835/"
+            title="Collective Intelligence"
+            description="Here it is, operational, soon to revolutionize 80% of our lives. Let's look at the workings of an AI software development agency from a developer's perspective! A month's work in just a few minutes?"
+            event="ITrends Meetup 2023"
+            cta="Meetup link"
+          />
           <Appearance
             href="https://www.slideshare.net/baadersz/facebook-research-2014-brightly-labs-full-presentation"
             title="What are you looking at on Facebook?"
