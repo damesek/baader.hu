@@ -93,6 +93,13 @@ export default function Speaking() {
     >
       <div className="space-y-20">
         <SpeakingSection title="Conferences">
+	<Appearance
+            href="https://ai.compasstechsummit.com/speaker/szabolcs-bader"
+            title="Illusion of life?"
+            description="What do we expect from AGI (Artificial General Intelligence)? How will the technology of the future differ from what we have today? Why is AGI or ASI (Artificial Super Intelligence) not possible with current architectures? What is life, really? What is personality, and how might an AGI with a personality come into existence? Could belief emerge during the testing of AGI/ASI? What are the current usability limits (with practical examples, like RAG/graph)?"
+            event="Compass AI Session 2024"
+            cta="Conference link"
+          />
         <Appearance
             href="https://www.meetup.com/itrend/events/297318835/"
             title="Collective Intelligence"
