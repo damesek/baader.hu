@@ -12,6 +12,8 @@ import {
 } from '@/components/SocialIcons'
 import logoBrightly from '@/images/logos/brightly.jpg'
 import logoOpenVSE from '@/images/logos/openvse.png'
+import logoEvasys from '@/images/logos/evasys.png'
+import logoPositive from '@/images/logos/positive.jpg'
 import logoCE from '@/images/logos/conversionexperts.jpg'
 import logoHPS from '@/images/logos/hps.jpg'
 import image1 from '@/images/photos/image-9.jpg'
@@ -185,6 +187,26 @@ function Role({ role }: { role: Role }) {
 
 function Resume() {
   let resume: Array<Role> = [
+    {
+      company: 'Positive',
+      title: 'Tech lead',
+      logo: logoPositive,
+      start: '2024',
+      end: {
+        label: 'current',
+        dateTime: new Date().getFullYear().toString(),
+      },
+    },
+    {
+      company: 'Evasys',
+      title: 'Senior Clojure Developer',
+      logo: logoEvasys,
+      start: '2023',
+      end: {
+        label: '2024',
+        dateTime: new Date().getFullYear().toString(),
+      },
+    },
     {
       company: 'IOIOIO',
       title: '7 years in the startup world',
