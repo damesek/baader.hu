@@ -93,13 +93,6 @@ export default function Speaking() {
     >
       <div className="space-y-20">
         <SpeakingSection title="Conferences">
-        <Appearance
-            href="https://digitalhungary.com"
-            title="Generative Engine Optimization (GEO)"
-            description="How to increase your visibility in AI-generated search results?"
-            event="Digital Marketing Forum 2025"
-            cta="Conference link"
-          />
 	      <Appearance
             href="https://ai.compasstechsummit.com/speaker/szabolcs-bader"
             title="Illusion of life?"
