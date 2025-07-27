@@ -193,7 +193,7 @@ function Resume() {
       logo: logoPositive,
       start: '2024',
       end: {
-        label: 'current',
+        label: '2025',
         dateTime: new Date().getFullYear().toString(),
       },
     },

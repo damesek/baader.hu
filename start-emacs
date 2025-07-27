@@ -1,0 +1,5 @@
+#!/bin/bash
+export JAVA_HOME=`/usr/libexec/java_home -v 17.0.6`
+export DYLD_LIBRARY_PATH='/usr/local/Cellar/gcc@8/8.5.0/lib/gcc/8'
+/usr/local/opt/emacs-mac/Emacs.app/Contents/MacOS/Emacs.sh
+

@@ -82,14 +82,14 @@ function Books({
 export const metadata: Metadata = {
   title: 'Speaking',
   description:
-    'I’ve spoken at events.',
+    'I&apos;ve spoken at events.',
 }
 
 export default function Speaking() {
   return (
     <SimpleLayout
-      title="I’ve spoken at events"
-      intro="One of my favorite ways to share my ideas is live on stage, where there’s so much more communication bandwidth than there is in writing. I had a nearly seven years pause due to my contracts."
+      title="I&apos;ve spoken at events"
+      intro="One of my favorite ways to share my ideas is live on stage, where there&apos;s so much more communication bandwidth than there is in writing. I had a nearly seven years pause due to my contracts."
     >
       <div className="space-y-20">
         <SpeakingSection title="Conferences">
@@ -103,7 +103,7 @@ export default function Speaking() {
         <Appearance
             href="https://www.meetup.com/itrend/events/297318835/"
             title="Collective Intelligence"
-            description="Here it is, operational, soon to revolutionize 80% of our lives. Let's look at the workings of an AI software development agency from a developer's perspective! A month's work in just a few minutes?"
+            description="Here it is, operational, soon to revolutionize 80% of our lives. Let&apos;s look at the workings of an AI software development agency from a developer&apos;s perspective! A month&apos;s work in just a few minutes?"
             event="ITrends Meetup 2023"
             cta="Meetup link"
           />
@@ -111,7 +111,7 @@ export default function Speaking() {
             href="https://www.slideshare.net/baadersz/facebook-research-2014-brightly-labs-full-presentation"
             title="What are you looking at on Facebook?"
             description="UX/UI analysis, attention rate, recall rate, ad effiency"
-            event="Facebook AllThings'14 2014"
+            event="Facebook AllThings&apos;14 2014"
             cta="Presentation link"
           />
           <Appearance
@@ -124,7 +124,7 @@ export default function Speaking() {
           <Appearance
             href="https://szinapszis.hu/hu/hirek/kutatas-2012-konferencia"
             title="Automatic, research-free web usability"
-            description="They say that if you’re not embarassed by your first version, you’re doing it wrong. Well when you’re selling DIY space shuttle kits it turns out it’s a bit more complicated."
+            description="They say that if you&apos;re not embarassed by your first version, you&apos;re doing it wrong. Well when you&apos;re selling DIY space shuttle kits it turns out it&apos;s a bit more complicated."
             event="Kutatas 2012"
             cta="Conference Summary page"
           />
@@ -133,6 +133,32 @@ export default function Speaking() {
 
         <div className="space-y-20 pt-10 mt-10 bg-white dark:bg-transparent">
         <SpeakingSection title="Books"> 
+          {/* Latest Book - LinkedIn Post */}
+          <Card as="article">
+            <Card.Title as="h3" href="#">
+              {`"Európai AI Szabályozás - hogyan kerüld el akár 35 millió EUR bírságot?"`} 
+            </Card.Title>
+            <Card.Eyebrow decorate> Bader Szabolcs, 2025, 450 pages </Card.Eyebrow>
+            <Card.Description>
+              I&apos;m pleased to introduce my new book on European AI regulation, which I believe fills an important gap - what started as a personal guide grew into a comprehensive 450-page, 20-chapter resource. With EU AI regulations becoming mandatory from February 2025 and potential fines up to 35 million euros for non-compliance, this book explains key concepts like CoP, MIIR, and GPAI, helping readers avoid costly mistakes.
+            </Card.Description>
+            <div className="mt-6 w-full">
+              <div className="relative overflow-hidden rounded-lg shadow-md bg-zinc-50 dark:bg-zinc-800/50 p-4">
+                <iframe 
+                  src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7332585724786937856" 
+                  height="1072" 
+                  width="504" 
+                  frameBorder="0" 
+                  allowFullScreen
+                  title="Embedded post"
+                  className="w-full max-w-full"
+                  style={{ minHeight: '600px' }}
+                />
+              </div>
+            </div>
+          </Card>
+          
+          {/* Conversion Optimization Book */}
           <Books
             title="Conversion Optimization Book"
             description="The first Hungarian book on conversion optimization techniques, featuring media files and eye-tracking results, is now outdated and no longer accessible."
@@ -141,7 +167,7 @@ export default function Speaking() {
             imageAlt="Conversion Optimization Book"
             imageWidth={533} 
             imageHeight={357} 
-          /> 
+          />
         </SpeakingSection>
         
       </div>
